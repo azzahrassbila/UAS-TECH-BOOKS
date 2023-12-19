@@ -97,6 +97,31 @@ html::-webkit-scrollbar-thumb{
     border: var(--border);
 }
 
+.reviews .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+}
+
+.reviews .heading::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0, 0, 0, .1);
+}
+
+.reviews .heading span {
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    color: #000;
+    background: #fff;
+    border: var(--border);
+}
+
 .spacer {
     height: 50px; /* Adjust the height as needed */
 }
@@ -382,4 +407,43 @@ body{
 
 .arrivals #infoButton:active {
     background-color: #21405a;
+}
+
+.reviews .reviews-slider .box{
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    max-width: 300px; /* Atur nilai sesuai kebutuhan Anda */
+    width: 100%; /* Agar tetap responsif */
+}
+
+.reviews .reviews-slider .box:hover{
+    border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+
+.reviews .reviews-slider .box p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
 }
