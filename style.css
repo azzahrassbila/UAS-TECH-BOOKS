@@ -484,6 +484,7 @@ body{
     padding: 2rem;
     text-align: center;
     margin: 2rem 0;
+}
 
 .reviews .reviews-slider .box:hover{
     border: var(--border-hover);
