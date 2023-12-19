@@ -322,3 +322,62 @@ body{
 .featured #infoButton:active {
     background-color: #21405a;
 }
+
+.arrivals .arrivals-slider .box{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2rem 0.5rem;
+    border: var(--border);
+    margin: 1rem 0;
+    max-width: 300px; /* Atur nilai sesuai kebutuhan Anda */
+    width: 100%; /* Agar tetap responsif */
+}
+
+.arrivals .arrivals-slider .box:hover{
+    border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.arrivals .arrivals-slider .box .content h3{
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.arrivals .arrivals-slider .box .content .price{
+    font-size: 1.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.arrivals .arrivals-slider .box .content .price span{
+    font-size: 1rem;
+    color: var(--blue);
+    text-decoration: line-through;
+}
+
+.arrivals #infoButton {
+    background-color: #427D9D;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    width: 90px;
+    margin: 0 auto; /* Menengahkan secara horizontal */
+    max-width: 100%;
+}
+
+.arrivals #infoButton:hover {
+    background-color: #325f7b;
+}
+
+.arrivals #infoButton:active {
+    background-color: #21405a;
+}
