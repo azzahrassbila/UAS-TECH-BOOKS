@@ -99,6 +99,7 @@ html::-webkit-scrollbar-thumb{
 
 .reviews .heading {
     text-align: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
     display: block;
@@ -478,4 +479,36 @@ body{
     background-color: #21405a;
 }
 
+.reviews .reviews-slider .box{
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
 
+.reviews .reviews-slider .box:hover{
+    border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3{
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.reviews .reviews-slider .box p{
+    color: var(--light-color);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i{
+    font-size: 1.7rem;
+    color: var(--navy);
+}
