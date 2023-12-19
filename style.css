@@ -409,41 +409,73 @@ body{
     background-color: #21405a;
 }
 
-.reviews .reviews-slider .box{
-    border: var(--border);
-    padding: 2rem;
-    text-align: center;
-    margin: 2rem 0;
-    max-width: 300px; /* Atur nilai sesuai kebutuhan Anda */
-    width: 100%; /* Agar tetap responsif */
+.deal {
+    background: var(--cold);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.reviews .reviews-slider .box:hover{
-    border: var(--border-hover);
+.deal .content {
+    flex: 1 1 calc(50% - 1.5rem); /* Lebar konten dikurangi margin gap */
+    padding: 0 2rem;
 }
 
-.reviews .reviews-slider .box img{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
+.deal .content h3 {
+    color: var(--navy);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+    margin-left: 8rem;
 }
 
-.reviews .reviews-slider .box h3{
+.deal .content h1 {
     color: var(--black);
-    font-size: 2.2rem;
-    padding: .5rem 0;
+    font-size: 3.5rem;
+    margin-left: 8rem;
 }
 
-
-.reviews .reviews-slider .box p{
-    color: var(--light-color);
-    font-size: 1.4rem;
-    padding: 1rem 0;
+.deal .content p {
+    color: var(--black);
+    font-size: 1.8rem;
     line-height: 2;
+    margin-bottom: 1.5rem;
+    margin-left: 8rem;
 }
 
-.reviews .reviews-slider .box .stars i{
-    font-size: 1.7rem;
-    color: var(--green);
+.deal .image {
+    flex: 1 1 calc(50% - 1.5rem); /* Lebar gambar dikurangi margin gap */
 }
+
+.deal .image img {
+    width: 40%; /* Gambar akan menyesuaikan lebar parent-nya */
+    max-width: 100%; /* Mencegah gambar melebihi lebar parent-nya */
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 17rem;
+}
+
+.deal #infoButton {
+    background-color: #427D9D;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    width: 90px;
+    margin: 0 auto; /* Menengahkan secara horizontal */
+    max-width: 100%;
+    margin-left: 8rem;
+}
+
+.deal #infoButton:hover {
+    background-color: #325f7b;
+}
+
+.deal #infoButton:active {
+    background-color: #21405a;
+}
+
+
