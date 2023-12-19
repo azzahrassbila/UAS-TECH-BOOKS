@@ -329,7 +329,7 @@ body{
     gap: 1.2rem;
     padding: 2rem 0.5rem;
     border: var(--border);
-    margin: 1rem 0;
+    margin: 1rem auto;
     max-width: 300px; /* Atur nilai sesuai kebutuhan Anda */
     width: 100%; /* Agar tetap responsif */
 }
@@ -339,7 +339,7 @@ body{
 }
 
 .arrivals .arrivals-slider .box .image img{
-    width: 100%;
+    width: 105%;
     height: 15rem;
     object-fit: cover;
 }
@@ -347,6 +347,8 @@ body{
 .arrivals .arrivals-slider .box .content h3{
     font-size: 1.3rem;
     color: var(--black);
+    position: relative;
+    top: -0.5rem;
 }
 
 .arrivals .arrivals-slider .box .content .price{
